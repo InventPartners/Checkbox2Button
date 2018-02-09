@@ -1,0 +1,16 @@
+$btn-checkbox-checked-color: #FFF !default;
+$btn-checkbox-checked-bg: #333 !default;
+$btn-checkbox-checked-hover-color: #000 !default;
+$btn-checkbox-checked-hover-bg: #000 !default;
+
+.btn-checkbox {
+	
+}
+.btn-checkbox-checked {
+	color: $btn-checkbox-checked-color;
+	background-color: $btn-checkbox-checked-bg;
+	&:hover {
+		color: $btn-checkbox-checked-hover-color;
+		background-color: $btn-checkbox-checked-hover-bg;
+	}
+}
