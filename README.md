@@ -21,7 +21,7 @@ Bootstrap Responsive Tabs requires [Bootstrap](http://getbootstrap.com/) v 3.3.7
 ## Usage
 Include the JavaScript and CSS files.
 
-Add a the class "checkbox2button" to each "checkox" or "form-check" div which you wish to see converted to buttons.
+Add a the class "checkbox2button" to each "checkbox" or "form-check" div which you wish to see converted to buttons.
 
 View the [demo page](https://inventpartners.github.io/Checkbox2Button/) for further guidance on the markup etc.
 
