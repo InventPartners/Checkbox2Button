@@ -48,12 +48,38 @@ var checkbox2button = {
 			return false;
 		});
 	
+		$('body').on('click' , '.btn-checkbox2btn .glyphicon' , function(event){
+			event.preventDefault();
+			target = $(event.target).parent('.btn-checkbox2btn');
+			if(target){
+				if($(target).hasClass('btn-checkbox-checked')){
+					checkbox2button.unCheckCheckbox($(target));
+				} else {
+					checkbox2button.checkCheckbox($(target));
+				}
+			}
+			return false;
+		});
+	
 		$('body').on('click' , '.btn-radio2btn' , function(event){
 			event.preventDefault();
 			if($(event.target).hasClass('btn-checkbox-checked')){
 				checkbox2button.unCheckRadioCheckbox($(event.target));
 			} else {
 				checkbox2button.checkRadioCheckbox($(event.target));
+			}
+			return false;
+		});
+	
+		$('body').on('click' , '.btn-radio2btn .glyphicon' , function(event){
+			event.preventDefault();
+			target = $(event.target).parent('.btn-radio2btn');
+			if(target){
+				if($(target).hasClass('btn-checkbox-checked')){
+					checkbox2button.unCheckRadioCheckbox($(target));
+				} else {
+					checkbox2button.checkRadioCheckbox($(target));
+				}
 			}
 			return false;
 		});
