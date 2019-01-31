@@ -9,14 +9,13 @@ var checkbox2button = {
 				var html = '';
 				$parent.find('option').each(function(index , item){
 					var value = $(item).attr('value');
-					var caption = $(item).text();
-					if(!value){
-						value = caption;
+					if(value){
+						var caption = $(item).text();
+						if($(item).prop('selected')){
+							selected = value;
+						}
+						html += '<a class="btn btn-default btn-sm btn-radio2btn" data-name="' + name + '" data-value="' + value + '"><span class="glyphicon glyphicon-unchecked"></span> ' + caption + '</a>';
 					}
-					if($(item).prop('selected')){
-						selected = value;
-					}
-					html += '<a class="btn btn-default btn-sm btn-radio2btn" data-name="' + name + '" data-value="' + value + '"><span class="glyphicon glyphicon-unchecked"></span> ' + caption + '</a>';
 				});
 				$parent.replaceWith('<input type="hidden" name="' + name + '" value="" /><div class="btn-group btn-checkbox2btn" role="group" id="checkbox2buttonsel-' + name + '">' + html + '</div>');
 				$parent = $('#checkbox2buttonsel-' + name);
