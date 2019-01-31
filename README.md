@@ -1,7 +1,7 @@
 # Checkbox2Button
 By Invent Partners [http://inventpartners.com]
 
-Checkbox2Button converts checkboxes and radio inputs to user-friendly buttons, whilst ensuring that the correct values are posted back to the form.
+Checkbox2Button converts checkboxes, radio inputs and select input to user-friendly buttons, whilst ensuring that the correct values are posted back to the form.
 
 ### LICENSE
 
