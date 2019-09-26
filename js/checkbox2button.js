@@ -135,7 +135,7 @@ var checkbox2button = {
 		$('.btn-radio2btn[data-name="' + $(element).attr('data-name') + '"]').removeClass('btn-checkbox-checked');
 		$('.btn-radio2btn[data-name="' + $(element).attr('data-name') + '"] .glyphicon').removeClass('glyphicon-check');
 		$('.btn-radio2btn[data-name="' + $(element).attr('data-name') + '"] .glyphicon').addClass('glyphicon-unchecked');
-		$('input[type="hidden"][name="' + $(element).attr('data-name') + '"]').val('');
+		$('input[type="hidden"][name="' + $(element).attr('data-name') + '"]').val(0);
 	}
 
 
